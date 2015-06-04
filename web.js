@@ -27,6 +27,7 @@ app.use(function(err, req, res, next) {
 app.get('/', routes.index);
 
 app.get("/db", function(request, response) {
+  //console.log("DATABASE_URL configured as: "+process.env.DATABASE_URL);
   pg.connect(process.env.DATABASE_URL, function(err, client, done){
     client.query('select * from test_table', function(err, result){
       done();
