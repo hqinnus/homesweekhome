@@ -16,7 +16,8 @@
     "logfmt": "^1.1.2",
     "express": "^4.0.0",
     "jade":"*",
-    "ejs":"*"
+    "ejs":"*",
+    "pg": "4.x"
   },  
   "engines": {
   	"node": "0.10.x"
